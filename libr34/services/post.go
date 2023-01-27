@@ -45,11 +45,9 @@ func posts(c *gin.Context) {
 		return
 	}
 
-	// fmt.Println(string(body))
 	xml.Unmarshal(body, &posts)
 
 	jsonData, err := json.Marshal(posts)
-	fmt.Println(jsonData)
 
 	c.JSON(200, string(jsonData))
 }
