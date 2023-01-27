@@ -26,15 +26,27 @@ nav span {
 
 /* search bar */
 input[type='search'] {
-    border: 2px solid #2c2c3e; /* slightly darker than background */
-    border-radius: 25px; /* rounded corners */
-    padding: 10px; /* add some padding for the text */
-    width: 80%; /* make the search bar take up 80% of the width */
-    margin: 20px auto; /* center the search bar horizontally and add some top margin */
-    font-size: 1.2rem; /* increase font size */
-    outline: none; /* remove the default outline */
-    transition: all 0.3s; /* smooth transition on hover */
+    border: 2px solid #2c2c3e;
+    border-radius: 25px;
+    padding: 10px;
+    width: 50%;
+    margin: 20px auto;
+    font-size: 1.2rem;
+    outline: none;
+    transition: all 0.3s;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
+
 
 input[type='search']:focus {
     border-color: #cdd6f4; /* light blue text color */
