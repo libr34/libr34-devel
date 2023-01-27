@@ -1,0 +1,48 @@
+/* Add CSS styles for the dark purple and light blue background theme */
+body {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+}
+
+/* Style the navbar */
+nav {
+    background-color: #141418; /* slightly darker than the background */
+    border-radius: 30px; /* round the corners */
+    display: flex; /* center the elements */
+    justify-content: space-between; /* distribute the elements evenly */
+    padding: 10px 20px; /* add some padding */
+}
+
+/* Style the libr34-devel text and Go to Google button */
+nav a, nav button {
+    color: #cdd6f4; /* light blue text color */
+    text-decoration: none; /* remove underline */
+    padding: 10px; /* add some padding */
+    border-radius: 20px; /* round the corners */
+    background-color: #1e1e2e;
+    transition: background-color 0.3s ease;
+}
+nav a:hover, nav button:hover {
+    background-color: #141418;
+}
+
+/* Style the search bar */
+#search-bar {
+    display: flex; /* center the input element */
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* take up the full height of the page */
+}
+#search-bar input {
+    background-color: #1e1e2e; /* dark purple background */
+    color: #cdd6f4; /* light blue text color */
+    border: 2px solid #141418; /* slightly darker than the background */
+    border-radius: 20px; /* round the corners */
+    padding: 10px 20px; /* add some padding */
+    font-size: 1.5em; /* increase the font size */
+    width: 50%; /* take up half the width of the search-bar container */
+}
+#search-bar input::placeholder {
+    color: #cdd6f4; /* light blue text color */
+}
+
