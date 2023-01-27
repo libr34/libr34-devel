@@ -1,6 +1,7 @@
 package services
 
 import (
+	"encoding/json"
 	"encoding/xml"
 	"fmt"
 	"io/ioutil"
@@ -44,13 +45,13 @@ func posts(c *gin.Context) {
 		return
 	}
 
-	fmt.Println(string(body))
-
+	// fmt.Println(string(body))
 	xml.Unmarshal(body, &posts)
 
-	fmt.Println(posts.PostS[1].Tags)
+	jsonData, err := json.Marshal(posts)
+	fmt.Println(jsonData)
 
-	c.JSON(200, "test")
+	c.JSON(200, string(jsonData))
 }
 
 func post(c *gin.Context) {
