@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="static/styles/main.css">
 </head>
 
+
 <body>
     <nav>
         <a href="#">libr34-devel</a>
@@ -17,10 +18,28 @@
 	    	<img src="https://rule34.xxx/images/header2.png"/>
 	    </center>
         <form>
-            <input type="search" placeholder="Enter to search...">
+            <input id="search" type="search" placeholder="Enter to search...">
         </form>
     </div>
 </body>
+
+<script>
+    let autoc;
+
+    let search = document.getElementById('search')
+    console.log(search)
+    search.addEventListener('input', async function() {
+        console.log(search.value)
+        const resp = await fetch(`http://localhost:8080/autocomplete?q=${search.value}`, {
+            method: 'GET',
+        })
+        console.log(await resp)
+        if (await resp.ok) {
+            autoc = await resp.json()
+            console.log(autoc)
+        }
+    })
+</script>
 
 </html>
 
