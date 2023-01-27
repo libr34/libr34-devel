@@ -1,2 +1,2 @@
 # libr34-devel
-- It does the funny :3
+- It does the funny
