@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>libr34-devel</title>
+    <link rel="stylesheet" type="text/css" href="static/styles/main.css">
+</head>
+
+
+<body>
+    <nav>
+        <a href="#">libr34-devel</a>
+        <span>Rule #34: If it exists there is porn of it. If not, start uploading.</span>
+        <a href="https://rule34.xxx">R34</a>
+    </nav>
+    <div class="search-container">
+        <form action="file:///home/dev/code/libr34-devel/site/posts.html" method="get">
+            <input style="top: 12%; left: 50%; transform: translate(-50%, -50%);" id="search" name="q" type="search" placeholder="Enter to search...">
+        </form>
+    </div>
+    <div id="results"">
+
+    </div>
+    <div class="footer">
+        <a href="https://github.com/benilol98/libr34-devel">
+            <h1>
+                Star the project on github
+            </h1>
+        </a>
+    </div>
+</body>
+
+<script>
+    // Search bar
+    let autoc;
+
+    let search = document.getElementById('search')
+    console.log(search)
+    search.addEventListener('input', async function() {
+        console.log(search.value)
+        const resp = await fetch(`http://localhost:8080/autocomplete?q=${search.value}`, {
+            method: 'GET',
+        })
+        console.log(await resp)
+        if (await resp.ok) {
+            autoc = await resp.json()
+            console.log(autoc)
+        }
+    })
+
+    // Get Results
+    async function getRes() {
+        let query = new URL(document.URL).searchParams.get('q')
+        console.log(query)
+
+        const resp = await fetch(`http://localhost:8080/posts?tags=${query}`, {
+            method: 'GET'
+        })
+        if (await resp.ok) {
+            console.log(await resp.json())
+        }
+    }
+    getRes()
+
+</script>
+
+</html>
+
