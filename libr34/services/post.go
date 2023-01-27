@@ -15,6 +15,7 @@ const BaseUrl string = "https://api.rule34.xxx/index.php?"
 func AttachServices(r *gin.Engine) *gin.Engine {
 	r.GET("/", search)
 	r.GET("/posts", posts)
+	r.GET("/autocomplete", autocomplete)
 
 	return r
 }
