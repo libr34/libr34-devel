@@ -6,11 +6,14 @@ body {
 
 /* Style the navbar */
 nav {
-    background-color: #141418; /* slightly darker than the background */
-    border-radius: 30px; /* round the corners */
-    display: flex; /* center the elements */
-    justify-content: space-between; /* distribute the elements evenly */
-    padding: 10px 20px; /* add some padding */
+    /* existing styles */
+    align-items: center; /* center the elements vertically */
+}
+
+nav span {
+    /* Add styles for the new text */
+    color: #cdd6f4; /* light blue text color */
+    margin: 0 10px; /* add some margin to separate the text from the other elements */
 }
 
 /* Style the libr34-devel text and Go to Google button */
