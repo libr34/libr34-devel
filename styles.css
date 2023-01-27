@@ -1,51 +1,43 @@
-/* Add CSS styles for the dark purple and light blue background theme */
 body {
-    background-color: #1e1e2e;
-    color: #cdd6f4;
+    background-color: #1e1e2e; /* dark purple background */
+    color: #cdd6f4; /* light blue text color */
+    font-family: Arial, sans-serif; /* default font */
 }
 
-/* Style the navbar */
 nav {
-    /* existing styles */
+    background-color: #2c2c3e; /* slightly darker than background */
+    border-radius: 25px; /* rounded corners */
+    display: flex; /* display elements as a flex container */
     align-items: center; /* center the elements vertically */
+    justify-content: space-between; /* distribute elements evenly across the width of the navbar */
+    padding: 10px 20px; /* add some padding for the elements */
+}
+
+nav a {
+    color: #cdd6f4; /* light blue text color */
+    text-decoration: none; /* remove underline from text */
+    font-weight: bold; /* bold text */
 }
 
 nav span {
-    /* Add styles for the new text */
     color: #cdd6f4; /* light blue text color */
     margin: 0 10px; /* add some margin to separate the text from the other elements */
 }
 
-/* Style the libr34-devel text and Go to Google button */
-nav a, nav button {
-    color: #cdd6f4; /* light blue text color */
-    text-decoration: none; /* remove underline */
-    padding: 10px; /* add some padding */
-    border-radius: 20px; /* round the corners */
-    background-color: #1e1e2e;
-    transition: background-color 0.3s ease;
-}
-nav a:hover, nav button:hover {
-    background-color: #141418;
+/* search bar */
+input[type='search'] {
+    border: 2px solid #2c2c3e; /* slightly darker than background */
+    border-radius: 25px; /* rounded corners */
+    padding: 10px; /* add some padding for the text */
+    width: 80%; /* make the search bar take up 80% of the width */
+    margin: 20px auto; /* center the search bar horizontally and add some top margin */
+    font-size: 1.2rem; /* increase font size */
+    outline: none; /* remove the default outline */
+    transition: all 0.3s; /* smooth transition on hover */
 }
 
-/* Style the search bar */
-#search-bar {
-    display: flex; /* center the input element */
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* take up the full height of the page */
-}
-#search-bar input {
-    background-color: #1e1e2e; /* dark purple background */
-    color: #cdd6f4; /* light blue text color */
-    border: 2px solid #141418; /* slightly darker than the background */
-    border-radius: 20px; /* round the corners */
-    padding: 10px 20px; /* add some padding */
-    font-size: 1.5em; /* increase the font size */
-    width: 50%; /* take up half the width of the search-bar container */
-}
-#search-bar input::placeholder {
-    color: #cdd6f4; /* light blue text color */
+input[type='search']:focus {
+    border-color: #cdd6f4; /* light blue text color */
+    box-shadow: 0 0 5px #cdd6f4; /* add a light blue shadow on focus */
 }
 
