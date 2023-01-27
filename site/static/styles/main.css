@@ -75,3 +75,9 @@ input[type='search']:focus {
     color: #cdd6f4;
     text-shadow: 0px 0px 0px #cdd6f4;
 }
+
+#results {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
