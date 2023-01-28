@@ -13,7 +13,8 @@ async function GetPost() {
         if (source.endsWith(".mp4")) {
             let PostSrc = document.getElementById('sauce')
 
-            PostSrc.src = source
+            //PostSrc.src = source
+            PostSrc.innerHTML = "No videos for now..."
 
         } else {
             var PostContainer = document.getElementById('PostContainer')
