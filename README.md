@@ -6,4 +6,7 @@
 ```
 go run .
 ```
-- Modify index.html and posts.html to point to your directory
+- Modify index.html and posts.html to point to your posts.html
+```
+<form action="file:///home/dev/code/libr34-devel/site/posts.html" method="get">
+```
