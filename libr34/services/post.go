@@ -31,7 +31,7 @@ func posts(c *gin.Context) {
 
 	tags := c.Query("tags")
 
-	response, err := http.Get(BaseUrl + "page=dapi&s=post&q=index&tags=" + tags + "&pid=1")
+	response, err := http.Get(BaseUrl + "page=dapi&s=post&q=index&tags=" + tags + "&pid=0")
 
 	if err != nil {
 		fmt.Println("Error making GET request: ", err)
