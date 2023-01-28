@@ -15,6 +15,7 @@ const BaseUrl string = "https://api.rule34.xxx/index.php?"
 
 func AttachServices(r *gin.Engine) *gin.Engine {
 	r.GET("/", search)
+	r.GET("/post", post)
 	r.GET("/posts", posts)
 	r.GET("/autocomplete", autocomplete)
 
@@ -53,5 +54,28 @@ func posts(c *gin.Context) {
 }
 
 func post(c *gin.Context) {
+	var posts models.Posts
 
+	id := c.Query("id")
+
+	response, err := http.Get(BaseUrl + "page=dapi&s=post&q=index&id=" + id)
+
+	if err != nil {
+		fmt.Println("Error making GET request: ", err)
+		c.JSON(500, "test")
+		return
+	}
+
+	body, err := ioutil.ReadAll(response.Body)
+	if err != nil {
+		fmt.Println("Error reading response body: ", err)
+		c.JSON(401, "test")
+		return
+	}
+
+	xml.Unmarshal(body, &posts)
+
+	jsonData, err := json.Marshal(posts)
+
+	c.JSON(200, string(jsonData))
 }
