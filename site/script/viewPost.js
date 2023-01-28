@@ -10,6 +10,8 @@ async function GetPost() {
         console.log(results)
         const source = results.posts[0].file_url
         console.log(source)
+        let download = document.getElementById('download')
+        download.href = source
         if (source.endsWith(".mp4")) {
             let PostSrc = document.getElementById('sauce')
 
