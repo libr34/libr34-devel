@@ -10,7 +10,3 @@ git clone https://github.com/benilol98/libr34-devel
 ```
 go run .
 ```
-- Modify index.html and posts.html to point to your posts.html
-```html
-<form action="file:///home/dev/code/libr34-devel/site/posts.html" method="get">
-```
