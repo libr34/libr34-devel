@@ -30,26 +30,11 @@
     </div>
 </body>
 
+<script defer src="script/search.js"></script>
+
 <script>
-    // Search bar
-    let autoc;
-
-    let search = document.getElementById('search')
-    console.log(search)
-    search.addEventListener('input', async function() {
-        console.log(search.value)
-        const resp = await fetch(`http://localhost:8080/autocomplete?q=${search.value}`, {
-            method: 'GET',
-        })
-        console.log(await resp)
-        if (await resp.ok) {
-            autoc = await resp.json()
-            console.log(autoc)
-        }
-    })
-
     // Get Results
-    async function getRes() {
+    async function getResults() {
         let query = new URL(document.URL).searchParams.get('q')
         console.log(query)
 
@@ -62,7 +47,7 @@
         for (var i = 0; i < results.posts.length; i++) {
             var NewPostContainer = document.createElement("div")
             var NewAtag = document.createElement("a")
-            NewAtag.href = `/post?id=id`
+            NewAtag.href = `./post.html?id=${results.posts[i].id}`
             var NewImg = document.createElement("img")
             NewImg.style = "max-width: 300px;"
             NewImg.src = `${results.posts[i].preview_url}`
@@ -74,7 +59,7 @@
         }            
         })
     }
-    getRes()
+    getResults()
 
 </script>
 
