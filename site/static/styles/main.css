@@ -64,11 +64,10 @@ input[type='search']:focus {
 }
 .footer a {
     text-align: center;
-    color: #1e1e2e;
+    color: #585b70;
     transition: 0.4s all;
     text-decoration: none;
-    /* If you don't like the shadow just remove this since that is what i have said */
-    text-shadow: 1px 1px 1px #cdd6f4;
+    /* thanks susa for allowing me to remove the shadow!!! */
 }
 .footer a:hover {
     transition: 0.4s all;
