@@ -81,3 +81,12 @@ input[type='search']:focus {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+#PostContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#PostContainer img {
+    max-width: 1000px;
+}
