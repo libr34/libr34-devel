@@ -25,15 +25,16 @@ body {
 
 .nav-search {
     padding: 6px;
-    color: #cdd6f4;
-    width: 30vw;
-    border-radius: 10px;
+    border: 2px solid #2c2c3e;
+    border-radius: 25px;
+    width: 50%;
+    font-size: 1.2rem;
+    outline: none;
+    transition: all 0.3s;
     background-color: #1e1e2e;
+    color: #cdd6f4;
 }
 
-.nav-search:focus {
-    outline-width: 0;
-}
 
 li {list-style: none;margin: 0px 5px 0px 5px;}
 a {text-decoration: none;color: #cdd6f4}
