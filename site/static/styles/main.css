@@ -1,5 +1,5 @@
 body {
-    background-color: #1e1e2e; /* dark purple background */
+    background-color: #1e1e2e !important; /* dark purple background */
     color: #cdd6f4; /* light blue text color */
     font-family: Arial, sans-serif; /* default font */
 }
@@ -40,7 +40,6 @@ input[type='search'] {
     position: absolute;
     background-color: #1e1e2e;
     color: #cdd6f4;
-    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -89,3 +88,9 @@ input[type='search']:focus {
     max-width: 1000px;
     max-height: 700px;
 }
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
