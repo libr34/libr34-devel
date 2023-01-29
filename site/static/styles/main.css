@@ -48,6 +48,11 @@ input[type='search'] {
 
 }
 
+button {
+    background-color: rgb(202, 158, 230);
+    border-radius: 25px;
+}
+
 
 input[type='search']:focus {
     border-color: #cdd6f4; /* light blue text color */
