@@ -25,46 +25,22 @@
     <div id="results"">
 
     </div>
-    <div class=" footer">
-        <a href="https://github.com/benilol98/libr34-devel">
+    <div class=" footer-res">
+        <button id="dec">-</button>
+        <!--a href="https://github.com/benilol98/libr34-devel">
             <h1>
                 Star the project on github
             </h1>
-        </a>
+        </a-->
+        <div id="pagncont">
+
+        </div>
+        <button id="inc">+</button>
     </div>
 </body>
 
 <script defer src="script/search.js"></script>
 
-<script>
-    // Get Results
-    async function getResults() {
-        let query = new URL(document.URL).searchParams.get('q')
-        console.log(query)
-
-        const resp = await fetch(`http://localhost:8080/posts?tags=${query}`, {
-            method: 'GET'
-        }).then(resp => resp.json()).then(data => {
-            let results_pre_str = data
-            const results = JSON.parse(results_pre_str)
-
-            for (var i = 0; i < results.posts.length; i++) {
-                var NewPostContainer = document.createElement("div")
-                var NewAtag = document.createElement("a")
-                NewAtag.href = `./post.html?id=${results.posts[i].id}`
-                var NewImg = document.createElement("img")
-                NewImg.style = "max-width: 300px;"
-                NewImg.src = `${results.posts[i].preview_url}`
-                var parentDiv = document.getElementById("results")
-                NewPostContainer.appendChild(NewAtag)
-                NewAtag.appendChild(NewImg)
-                parentDiv.appendChild(NewPostContainer)
-
-            }
-        })
-    }
-    getResults()
-
-</script>
+<script defer src="script/searchPosts.js"></script>
 
 </html>
