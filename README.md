@@ -8,8 +8,13 @@ git clone https://github.com/benilol98/libr34-devel
 ```
 
 ### Run your preferred install target:
-- ```make nginx```
-- ```make apache``` <- ***Currently not supported***
+```
+# make nginx
+```
+***Currently not supported***
+```
+# make apache
+```
 
 - In the libr34 directory run:
 ```
