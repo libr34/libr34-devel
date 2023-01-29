@@ -15,11 +15,12 @@ sp=$server_port
 # Create config string
 nginx_config="server {
     listen $sp;
+    listen [::]:$sp;
     server_name $sn;
-    root /var/www/html/libr34;
 
     location / {
-        try_files \$uri \$uri/ /index.html;
+        root /var/www/html/libr34;
+        index index.html;
     }
 
     location /api {
