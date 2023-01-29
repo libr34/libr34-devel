@@ -58,6 +58,7 @@ input[type='search']:focus {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    text-color: #ca9ee6;
 }
 
 .footer {

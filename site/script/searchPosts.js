@@ -27,7 +27,7 @@ async function getResults() {
             console.log(page)
 
             if (page == i) {
-                Atag.style = "margin: 10px; color: red;"
+                Atag.style = "margin: 10px; color: #ca9ee6;"
             } else {
                 Atag.style = "margin: 10px;"
             }
