@@ -9,6 +9,7 @@ async function getResults() {
 
     let page = 0
     page = parseInt(new URLSearchParams(document.URL).get('p'))
+    console.log(page)
 
     const resp = await fetch(`http://localhost:8080/posts?tags=${query}&p=${page}`, {
         method: 'GET'
@@ -18,10 +19,18 @@ async function getResults() {
         //console.log(results.posts.length)
         number_of_pages = Math.round(results.count / 100)
 
-        for (var i = 0; i < page-1; i++) {
+        for (var i = 0; i < number_of_pages; i++) {
             var Atag = document.createElement("a")
             Atag.innerHTML = `${i+1}`
-            Atag.href = `./posts.html?q=${query}&p=${page}`
+            Atag.href = `./posts.html?q=${query}&p=${i}`
+            console.log(i)
+            console.log(page)
+
+            if (page == i) {
+                Atag.style = "margin: 10px; color: red;"
+            } else {
+                Atag.style = "margin: 10px;"
+            }
 
             let pagn = document.getElementById('pagncont')
             pagn.appendChild(Atag)

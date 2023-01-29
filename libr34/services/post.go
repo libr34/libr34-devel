@@ -30,8 +30,9 @@ func posts(c *gin.Context) {
 	var posts models.Posts
 
 	tags := c.Query("tags")
+	page := c.Query("p")
 
-	response, err := http.Get(BaseUrl + "page=dapi&s=post&q=index&tags=" + tags + "&pid=0")
+	response, err := http.Get(BaseUrl + "page=dapi&s=post&q=index&tags=" + tags + "&pid=" + page + "&limit=42")
 
 	if err != nil {
 		fmt.Println("Error making GET request: ", err)
