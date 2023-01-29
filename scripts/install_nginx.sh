@@ -54,3 +54,6 @@ if [ ! -f "/etc/nginx/sites-enabled/libr34" ]; then
     ln -s /etc/nginx/sites-available/libr34 /etc/nginx/sites-enabled/libr34
 fi
 
+echo -e "\033[34mWARNING: Restart the daemon to apply the configuration!\033[0m"
+echo ""
+echo -e "\033[33mWARNING: On certain distros like artix you have to include this line in your nginx.conf's http block: include /etc/nginx/sites-available/*;\033[0m"
