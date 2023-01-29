@@ -22,6 +22,7 @@ async function GetPost() {
             var PostContainer = document.getElementById('PostContainer')
 
             var Img = document.createElement('img')
+            Img.style = " box-shadow: 0.0rem 0.0rem 3rem #ca9ee6;"
             Img.src = source
             PostContainer.appendChild(Img)
         }
