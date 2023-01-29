@@ -17,7 +17,7 @@ async function getResults() {
         let results_pre_str = data
         const results = JSON.parse(results_pre_str)
         //console.log(results.posts.length)
-        number_of_pages = Math.round(results.count / 100)
+        number_of_pages = Math.round(results.count / 42)
 
         for (var i = 0; i < number_of_pages; i++) {
             var Atag = document.createElement("a")

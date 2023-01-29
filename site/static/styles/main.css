@@ -54,6 +54,12 @@ input[type='search']:focus {
     box-shadow: 0 0 5px #cdd6f4; /* add a light blue shadow on focus */
 }
 
+.pagncont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .footer {
     background-color: #2c2c3e;
     position: fixed;
