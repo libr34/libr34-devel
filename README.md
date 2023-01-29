@@ -6,8 +6,13 @@
 ```
 git clone https://github.com/benilol98/libr34-devel
 ```
+- CD into the repos directory
+```
+cd libr34-devel
+```
 
 ### Run your preferred install target:
+Make sure you run them in the root of the repository.
 ```
 # make nginx
 ```
