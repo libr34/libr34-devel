@@ -11,7 +11,6 @@ git clone https://github.com/benilol98/libr34-devel
 ```
 # make nginx
 ```
-***Currently not supported***
 ```
 # make apache
 ```
