@@ -4,7 +4,7 @@
     let search = document.getElementById('search')
     search.addEventListener('input', async function() {
         console.log(search.value)
-        const resp = await fetch(`http://localhost:8080/autocomplete?q=${search.value}`, {
+        const resp = await fetch(`http://APIADDR/autocomplete?q=${search.value}`, {
             method: 'GET',
         })
         console.log(await resp)
