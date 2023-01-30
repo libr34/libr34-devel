@@ -14,10 +14,10 @@ import (
 const BaseUrl string = "https://api.rule34.xxx/index.php?"
 
 func AttachServices(r *gin.Engine) *gin.Engine {
-	r.GET("/", search)
-	r.GET("/post", post)
-	r.GET("/posts", posts)
-	r.GET("/autocomplete", autocomplete)
+	r.GET("/api", search)
+	r.GET("/api/post", post)
+	r.GET("/api/posts", posts)
+	r.GET("/api/autocomplete", autocomplete)
 
 	return r
 }
