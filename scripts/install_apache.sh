@@ -28,7 +28,7 @@ ProxyPass /api/ http://localhost:8080/
 ProxyPassReverse /api/ http://$sn/
 </VirtualHost>"
 
-./scripts/set_backend.sh
+#./scripts/set_backend.sh
 if [ ! -d "/var/www/html/libr34" ]; then
 mkdir -p /var/www/html/libr34
 fi

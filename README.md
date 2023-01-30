@@ -19,6 +19,9 @@ Make sure you run them in the root of the repository.
 ```
 # make apache
 ```
+Setting the APIADDR 
+- You can go into each script file manually and change APIADDR to {your_domain}/api
+- Or edit the files in /var/www/html/libr34/script/ so that you change APIADDR to {your_domain}/api
 
 - In the libr34 directory run:
 ```
