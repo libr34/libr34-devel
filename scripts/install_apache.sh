@@ -52,3 +52,5 @@ if [ ! -f "/etc/httpd/sites-enabled/libr34.conf" ]; then
 ln -s /etc/httpd/sites-available/libr34.conf /etc/httpd/sites-enabled/libr34.conf
 fi
 echo -e "\033[34mWARNING: Restart the daemon to apply the configuration!\033[0m"
+
+./scripts/set_backend.sh
