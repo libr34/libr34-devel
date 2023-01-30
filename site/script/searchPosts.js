@@ -17,14 +17,32 @@ async function getResults() {
         let results_pre_str = data
         const results = JSON.parse(results_pre_str)
         //console.log(results.posts.length)
-        number_of_pages = Math.round(results.count / 42)
+        number_of_pages = Math.ceil(results.count / 42)
+
+        if (page > number_of_pages) {
+            window.location.href = `./posts.html?q=${query}&p=${number_of_pages}`
+        }
+
+
+        let pgnm = document.getElementById('pgnm')
+        if (page <= 0) {
+            var DecTag = document.createElement("a")
+            DecTag.href = `#`
+            DecTag.innerHTML = "-"
+            pgnm.appendChild(DecTag)
+        } else {
+            var DecTag = document.createElement("a")
+            DecTag.href = `./posts.html?q=${query}&p=${page - 1}`
+            DecTag.innerHTML = "-"
+            pgnm.appendChild(DecTag)
+        }
 
         for (var i = 0; i < number_of_pages; i++) {
             var Atag = document.createElement("a")
             Atag.innerHTML = `${i+1}`
             Atag.href = `./posts.html?q=${query}&p=${i}`
-            console.log(i)
-            console.log(page)
+
+            let pagn = document.getElementById('pagncont')
 
             if (page == i) {
                 Atag.style = "margin: 10px; color: #ca9ee6;"
@@ -32,8 +50,26 @@ async function getResults() {
                 Atag.style = "margin: 10px;"
             }
 
-            let pagn = document.getElementById('pagncont')
             pagn.appendChild(Atag)
+        }
+
+        /* 
+        If the number of pages is less than or equal to the current page then
+        we shouldn't allow the user to inc the page number!
+        */
+        let pgnp = document.getElementById('pgnp')
+        if (number_of_pages <= page+1) {
+            console.log(number_of_pages)
+            console.log('here')
+            var IncTag = document.createElement("a")
+            IncTag.href = `#`
+            IncTag.innerHTML = "+"
+            pgnp.appendChild(IncTag)
+        } else {
+            var IncTag = document.createElement("a")
+            IncTag.href = `./posts.html?q=${query}&p=${page + 1}`
+            IncTag.innerHTML = "+"
+            pgnp.appendChild(IncTag)
         }
 
         for (var i = 0; i < results.posts.length; i++) {
@@ -51,20 +87,3 @@ async function getResults() {
     })
 }
 getResults()
-
-
-let inc = document.getElementById('inc')
-let dec = document.getElementById('dec')
-
-
-
-const Inc = () => {
-    
-}
-
-const Dec = () => {
-
-}
-
-inc.addEventListener('click', Inc())
-dec.addEventListener('click', Dec())

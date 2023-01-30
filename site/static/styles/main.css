@@ -60,10 +60,30 @@ input[type='search']:focus {
 }
 
 .pagncont {
+    color: #ca9ee6;
+}
+.pag {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-color: #ca9ee6;
+    justify-content: center;
+    padding: 2rem;
+}
+#pgnm a {
+    background-color: #1e1e2e;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+#pgnp a {
+    background-color: #1e1e2e;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+#pgnm a:hover {
+    background-color: #ca9ee6;
+    color: #1e1e2e;
+}
+#pgnp a:hover {
+    background-color: #ca9ee6;
+    color: #1e1e2e;
 }
 
 .footer {
