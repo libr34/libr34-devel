@@ -28,6 +28,7 @@ ProxyPass /api/ http://localhost:8080/
 ProxyPassReverse /api/ http://$sn/
 </VirtualHost>"
 
+./scripts/set_backend.sh
 if [ ! -d "/var/www/html/libr34" ]; then
 mkdir -p /var/www/html/libr34
 fi
@@ -52,5 +53,3 @@ if [ ! -f "/etc/httpd/sites-enabled/libr34.conf" ]; then
 ln -s /etc/httpd/sites-available/libr34.conf /etc/httpd/sites-enabled/libr34.conf
 fi
 echo -e "\033[34mWARNING: Restart the daemon to apply the configuration!\033[0m"
-
-./scripts/set_backend.sh
