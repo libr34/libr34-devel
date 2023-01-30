@@ -25,17 +25,14 @@ async function getResults() {
 
 
         let pgnm = document.getElementById('pgnm')
+        var DecTag = document.createElement("a")
+        DecTag.innerHTML = "-"
         if (page <= 0) {
-            var DecTag = document.createElement("a")
             DecTag.href = `#`
-            DecTag.innerHTML = "-"
-            pgnm.appendChild(DecTag)
         } else {
-            var DecTag = document.createElement("a")
             DecTag.href = `./posts.html?q=${query}&p=${page - 1}`
-            DecTag.innerHTML = "-"
-            pgnm.appendChild(DecTag)
         }
+        pgnm.appendChild(DecTag)
 
         for (var i = 0; i < number_of_pages; i++) {
             var Atag = document.createElement("a")
@@ -58,19 +55,14 @@ async function getResults() {
         we shouldn't allow the user to inc the page number!
         */
         let pgnp = document.getElementById('pgnp')
+        var IncTag = document.createElement("a")
+        IncTag.innerHTML = "+"
         if (number_of_pages <= page+1) {
-            console.log(number_of_pages)
-            console.log('here')
-            var IncTag = document.createElement("a")
             IncTag.href = `#`
-            IncTag.innerHTML = "+"
-            pgnp.appendChild(IncTag)
         } else {
-            var IncTag = document.createElement("a")
             IncTag.href = `./posts.html?q=${query}&p=${page + 1}`
-            IncTag.innerHTML = "+"
-            pgnp.appendChild(IncTag)
         }
+        pgnp.appendChild(IncTag)
 
         for (var i = 0; i < results.posts.length; i++) {
             var NewPostContainer = document.createElement("div")
