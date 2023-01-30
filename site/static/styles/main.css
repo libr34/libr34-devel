@@ -122,14 +122,15 @@ input[type='search']:focus {
 }
 
 #PostContainer img {
-    max-width: 1000px;
-    max-height: 700px;
+    max-width: 75rem;
+    max-height: 41.5rem;
+    border-radius: 1rem;
 }
 
 .footer-res {
     background-color: #2c2c3e;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     position: fixed;
     bottom: 0;
     /* Don't remove for some reason this makes it work! */
