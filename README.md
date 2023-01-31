@@ -27,3 +27,7 @@ Setting the APIADDR
 ```
 go run .
 ```
+## Our devs
+- CEO+Sigma Male: benilol98
+- Backend dev+Sigma Male: snekatmiskolc
+- Frontend dev (kinda)+Sigma Male: namesvin
