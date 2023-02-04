@@ -27,6 +27,8 @@ Setting the APIADDR
 ```
 go run .
 ```
+<img alt="GIF of installation" src="https://benike.monster/demo.gif" width="600" />
+
 ## Our devs
 - CEO+Sigma Male: benilol98
 - Backend dev+Sigma Male: snekatmiskolc
