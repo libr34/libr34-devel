@@ -33,3 +33,7 @@ go run .
 - CEO+Sigma Male: benilol98
 - Backend dev+Sigma Male: snekatmiskolc
 - Frontend dev (kinda)+Sigma Male: namesvin
+## TODO / Plans
+- Add proxy
+- Autocomplete
+- Fix pagination issues when there are tons of pages
