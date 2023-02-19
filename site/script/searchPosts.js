@@ -11,7 +11,7 @@ async function getResults() {
     page = parseInt(new URLSearchParams(document.URL).get('p'))
     console.log(page)
 
-    const resp = await fetch(`http://APIADDR/posts?tags=${query}&p=${page}`, {
+    const resp = await fetch(`https://APIADDR/posts?tags=${query}&p=${page}`, {
         method: 'GET'
     }).then(resp => resp.json()).then(data => {
         let results_pre_str = data
