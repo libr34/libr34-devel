@@ -13,6 +13,8 @@ async function GetPost() {
         let download = document.getElementById('download')
         download.href = source
         if (source.endsWith(".mp4")) {
+            let vid = document.getElementById('fluid_video_wrapper_video-id')
+            vid.style.display = 'block'
             let PostSrc = document.getElementById('sauce')
             PostSrc.src = `${source}`
 
