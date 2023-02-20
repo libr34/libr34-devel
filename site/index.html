@@ -21,9 +21,14 @@
             <a href="https://rule34.xxx">
                 <img src="https://rule34.xxx/images/header2.png" />
             </a>
-            <form action="./posts.html" method="get">
+            <form style="position:relative;" action="./posts.html" method="get">
                 <input id="search" name="q" type="search" placeholder="Enter to search...">
                 <input type="hidden" name="p" value="0">
+                <div id="autocomplete" style="position: absolute;">
+                    <h1 id="autoct"></h1>
+                    <hr style="border-color: #585b70"/>
+                    <div id="autocc"></div>
+                </div>
             </form>
         </center>
     </div>
