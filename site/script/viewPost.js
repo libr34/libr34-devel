@@ -14,9 +14,14 @@ async function GetPost() {
         download.href = source
         if (source.endsWith(".mp4")) {
             let PostSrc = document.getElementById('sauce')
+            PostSrc.src = `${source}`
+
+            let Video = document.getElementById('video-id')
+            console.log(Video)
+            Video.load()
 
             //PostSrc.src = source
-            PostSrc.innerHTML = "No videos for now..."
+            //PostSrc.innerHTML = "No videos for now..."
 
         } else {
             var PostContainer = document.getElementById('PostContainer')
