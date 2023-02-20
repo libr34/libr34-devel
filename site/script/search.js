@@ -7,8 +7,7 @@
         if(search.value != undefined && search.value != "") {
         let autoct = document.getElementById('autoct')
         autoct.innerText = `\"${search.value}\"`
-        const resp = await fetch(`http://localhost:8080/api/autocomplete?q=${search.value}`, {
-        //const resp = await fetch(`https://APIADDR/api/autocomplete?q=${search.value}`, {
+        const resp = await fetch(`https://APIADDR/api/autocomplete?q=${search.value}`, {
             method: 'GET',
         })
         if (await resp.ok) {
