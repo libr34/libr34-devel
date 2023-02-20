@@ -34,6 +34,6 @@ go run .
 - Backend dev+Sigma Male: snekatmiskolc
 - Frontend dev (kinda)+Sigma Male: namesvin
 ## TODO / Plans
-- Add proxy
 - Fix pagination issues when there are tons of pages
 - Make APIADDR replacement fully automatic
+- Serve everything trough the go backend so that the user doesn't have to touch r34.
