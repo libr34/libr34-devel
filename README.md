@@ -35,6 +35,5 @@ go run .
 - Frontend dev (kinda)+Sigma Male: namesvin
 ## TODO / Plans
 - Add proxy
-- Autocomplete
 - Fix pagination issues when there are tons of pages
 - Make APIADDR replacement fully automatic
