@@ -175,3 +175,7 @@ input[type='search']:focus {
 #autoct {
     text-align: center;
 }
+
+#fluid_video_wrapper_video-id {
+    display: none;
+}
