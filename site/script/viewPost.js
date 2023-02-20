@@ -2,7 +2,7 @@ async function GetPost() {
     let id = new URL(document.URL).searchParams.get('id')
     console.log(id)
 
-    const resp = await fetch(`https://APIADDR/post?id=${id}`, {
+    const resp = await fetch(`https://APIADDR/api/post?id=${id}`, {
         method: 'GET'
     }).then(resp => resp.json()).then(data => {
         let results_pre_str = data
