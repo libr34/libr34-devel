@@ -19,7 +19,7 @@
             autocc.innerHTML = ""
             for(let e = 0; e < autoc.length; e++) {
                 const newE = document.createElement('a')
-                newE.href = `./posts.html?q=${search.value}&p=0`
+                newE.href = `./posts.html?q=${autoc[e].value}&p=0`
 
                 const newContent = document.createTextNode(autoc[e].label)
                 console.log(autoc[e])
