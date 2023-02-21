@@ -32,7 +32,7 @@ go run .
 ## Instances
 | URL                        | Country |
 |----------------------------|---------|
-| https://r34.benike.monster | HU      |
+| https://r34.benike.monster | US      |
 
 ## Our devs
 - CEO+Sigma Male: benilol98
