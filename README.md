@@ -41,4 +41,5 @@ go run .
 ## TODO / Plans
 - Fix pagination issues when there are tons of pages
 - Make APIADDR replacement fully automatic
+- Make autocomplete add the prompt to the search bar instead of redirecting the user
 - Serve everything trough the go backend so that the user doesn't have to touch r34.
