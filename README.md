@@ -29,6 +29,11 @@ go run .
 ```
 <img alt="GIF of installation" src="https://benike.monster/demo.gif" width="600"/>
 
+## Instances
+| URL                        | Country |
+|----------------------------|---------|
+| https://r34.benike.monster | HU      |
+
 ## Our devs
 - CEO+Sigma Male: benilol98
 - Backend dev+Sigma Male: snekatmiskolc
