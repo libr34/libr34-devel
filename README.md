@@ -34,6 +34,8 @@ go run .
 |----------------------------|---------|
 | https://r34.benike.monster | US      |
 
+- To add your own instance add it and submit a pull request
+
 ## Our devs
 - CEO+Sigma Male: drinkmonster
 - Backend dev+Sigma Male: snekatmiskolc
