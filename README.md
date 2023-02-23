@@ -4,7 +4,7 @@
 ## How to use:
 - Clone the repo
 ```
-git clone https://github.com/benilol98/libr34-devel
+git clone https://github.com/libr34/libr34-devel
 ```
 - CD into the repos directory
 ```
