@@ -35,7 +35,7 @@ go run .
 | https://r34.benike.monster | US      |
 
 ## Our devs
-- CEO+Sigma Male: benilol98
+- CEO+Sigma Male: drinkmonster
 - Backend dev+Sigma Male: snekatmiskolc
 - Frontend dev (kinda)+Sigma Male: namesvin
 ## TODO / Plans
