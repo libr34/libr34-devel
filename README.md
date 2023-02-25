@@ -28,6 +28,7 @@ Setting the APIADDR
 go run .
 ```
 <img alt="GIF of installation" src="https://benike.monster/demo.gif" width="600"/>
+(gif is out of date but i'm sure you'll manage without it)
 
 ## Instances
 | URL                        | Country |
