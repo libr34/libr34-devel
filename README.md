@@ -38,7 +38,7 @@ go run .
 
 ## Our devs
 - CEO+Sigma Male: drinkmonster
-- Backend dev+Sigma Male: snekatmiskolc
+- Backend dev+Sigma Male: busyLambda
 - Frontend dev (kinda)+Sigma Male: namesvin
 ## TODO / Plans
 - Fix pagination issues when there are tons of pages
