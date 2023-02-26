@@ -27,6 +27,10 @@ Setting the APIADDR
 ```
 go run .
 ```
+- Or you can also build it:
+```
+go build
+```
 <img alt="GIF of installation" src="https://benike.monster/demo.gif" width="600"/>
 (gif is out of date but i'm sure you'll manage without it)
 
