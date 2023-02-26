@@ -33,6 +33,7 @@ go run .
 ## Instances
 | URL                        | Country |
 |----------------------------|---------|
+| https://r34.vincuska.wtf   | HU      |
 | https://r34.benike.monster | US      |
 
 - To add your own instance add it and submit a pull request
